@@ -1,27 +1,27 @@
 package com.go.arnite.data.source
 
 interface DataSource<T> {
-    interface LoadItemsCallback<X> {
+    interface LoadItemsCallback<T> {
 
-        fun onItemsLoaded(items: List<X>)
-
-        fun onDataNotAvailable()
-    }
-
-    interface GetItemCallback<X> {
-
-        fun onItemLoaded(item: X)
+        fun  onItemsLoaded(items: ArrayList<T>)
 
         fun onDataNotAvailable()
     }
 
-    fun getItems(callback: LoadItemsCallback<T>)
+    interface GetItemCallback<T> {
 
-    fun getItem(itemId: String, callback: GetItemCallback<T>)
+        fun  onItemLoaded(item: T)
 
-    fun saveItem(item: T)
+        fun onDataNotAvailable()
+    }
 
-    fun updateItem(itemId: String, item: T)
+    fun  getItems(callback: LoadItemsCallback<T>)
+
+    fun  getItem(itemId: String, callback: GetItemCallback<T>)
+
+    fun saveItem(item: Object)
+
+    fun updateItem(itemId: String, item: Object)
 
     fun deleteAllItems()
 

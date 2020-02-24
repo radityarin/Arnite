@@ -9,20 +9,22 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.go.arnite.ui.user.signup.SignUpUserActivity"></activity>
-        <activity android:name="com.go.arnite.ui.mentor.signup.SignUpMentorActivity" />
-        <activity android:name="com.go.arnite.ui.common.forgotpassword.ForgotPasswordActivity" />
-        <activity android:name="com.go.arnite.ui.common.onboarding.OnBoardingScreen" />
-        <activity android:name="com.go.arnite.ui.common.signin.SignInActivity">
+        <activity android:name=".ui.user.main.MainUserActivity"></activity>
+        <activity android:name=".ui.user.signup.SignUpUserActivity">
+        </activity>
+        <activity android:name=".ui.mentor.signup.SignUpMentorActivity" />
+        <activity android:name=".ui.common.forgotpassword.ForgotPasswordActivity" />
+        <activity android:name=".ui.common.onboarding.OnBoardingScreen" />
+        <activity android:name=".ui.common.signin.SignInActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.go.arnite.ui.common.termscondition.TermsConditionActivity" />
-        <activity android:name="com.go.arnite.ui.common.splashscreen.SplashScreenActivity" />
-        <activity android:name="com.go.arnite.ui.main.MainActivity"></activity>
+        <activity android:name=".ui.common.termscondition.TermsConditionActivity" />
+        <activity android:name=".ui.common.splashscreen.SplashScreenActivity" />
+        <activity android:name=".ui.main.MainActivity" />
     </application>
 
 </manifest>

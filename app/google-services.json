@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "530458119517",
+    "firebase_url": "https://arnite-8fff6.firebaseio.com",
+    "project_id": "arnite-8fff6",
+    "storage_bucket": "arnite-8fff6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:530458119517:android:5d0313587ffe19ae81ecb4",
+        "android_client_info": {
+          "package_name": "com.go.arnite"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "530458119517-c9fpqgug2u2c14rcts31eakqnnepdh7d.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.go.arnite",
+            "certificate_hash": "d0227f58137d7dbd65e14ff50ae6512c58183bff"
+          }
+        },
+        {
+          "client_id": "530458119517-62v0vhcr26qv3j1jqlh7nb6pn8oh8sem.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFJSWXB1NG1OiP8qTiQGDNiyprAdADkG4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "530458119517-62v0vhcr26qv3j1jqlh7nb6pn8oh8sem.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,13 +1,13 @@
-package com.go.arnite.ui.user
+package com.go.arnite.ui.common.forgotpassword
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.go.arnite.R
 
-class SignUpUserActivity : AppCompatActivity() {
+class ForgotPasswordActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up_user)
+        setContentView(R.layout.activity_forgot_password)
     }
 }

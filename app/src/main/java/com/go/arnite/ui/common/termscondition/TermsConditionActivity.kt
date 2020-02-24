@@ -1,13 +1,13 @@
-package com.go.arnite.ui.mentor
+package com.go.arnite.ui.common.termscondition
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.go.arnite.R
 
-class SignUpMentorActivity : AppCompatActivity() {
+class TermsConditionActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up_mentor)
+        setContentView(R.layout.activity_terms_condition)
     }
 }

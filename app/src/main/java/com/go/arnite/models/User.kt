@@ -1,4 +1,4 @@
-package com.go.arnite.data.models
+package com.go.arnite.models
 
 import com.google.firebase.database.IgnoreExtraProperties
 

@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorPrimary"
     android:orientation="vertical"
-    tools:context=".ui.main.TermsConditionActivity">
+    tools:context=".ui.common.termscondition.TermsConditionActivity">
 
     <ScrollView
         android:id="@+id/scrollView"

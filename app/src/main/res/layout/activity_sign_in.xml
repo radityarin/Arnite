@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_marginHorizontal="24dp"
-    tools:context=".ui.main.SignInActivity">
+    tools:context=".ui.common.signin.SignInActivity">
 
     <TextView
         android:id="@+id/textView3"
@@ -44,7 +44,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etUsername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
@@ -57,11 +57,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Password"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/etUsername"
         tools:layout_editor_absoluteX="0dp" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/etPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/textView4"
@@ -73,10 +73,11 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Forgot password?"
-        app:layout_constraintTop_toBottomOf="@+id/editText2"
+        app:layout_constraintTop_toBottomOf="@+id/etPassword"
         tools:layout_editor_absoluteX="16dp" />
 
     <Button
+        android:id="@+id/btnSignin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

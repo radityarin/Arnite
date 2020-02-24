@@ -1,13 +1,13 @@
-package com.go.arnite.ui.main
+package com.go.arnite.ui.user.signup
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.go.arnite.R
 
-class SignInActivity : AppCompatActivity() {
+class SignUpUserActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_in)
+        setContentView(R.layout.activity_sign_up_user)
     }
 }

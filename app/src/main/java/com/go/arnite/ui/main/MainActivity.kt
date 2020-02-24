@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import com.go.arnite.R
-import com.go.arnite.data.models.User
+import com.go.arnite.models.User
 import com.google.firebase.FirebaseApp
 import com.google.firebase.database.*
 

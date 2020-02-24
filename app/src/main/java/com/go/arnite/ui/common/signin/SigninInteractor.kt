@@ -16,7 +16,7 @@ class SigninInteractor {
         auth.signInWithEmailAndPassword(username, password)
             .addOnCompleteListener{
                 if (it.isSuccessful){
-                    callback.onLoginFailure("Berhasil login")
+                    callback.onLoginSuccess("Berhasil login")
                 } else {
                     callback.onLoginFailure("Gagal login")
                 }

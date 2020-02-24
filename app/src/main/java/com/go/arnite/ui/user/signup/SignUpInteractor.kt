@@ -22,7 +22,7 @@ class SignUpInteractor(presenter: SignUpContract.Presenter) {
             if (it.isSuccessful){
                 user.id = auth.uid.toString()
                 database.child("users").child(auth.uid.toString()).setValue(user)
-                callback.onRegisterFailure("Berhasil register")
+                callback.onRegisterSuccess("Berhasil register")
             } else {
                 callback.onRegisterFailure("Gagal register")
             }

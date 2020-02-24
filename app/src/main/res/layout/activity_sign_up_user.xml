@@ -8,9 +8,8 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:paddingHorizontal="16dp"
         android:layout_height="wrap_content"
-        tools:context=".ui.user.signup.SignUpUserActivity">
+        android:paddingHorizontal="24dp">
 
         <TextView
             android:id="@+id/textView3"

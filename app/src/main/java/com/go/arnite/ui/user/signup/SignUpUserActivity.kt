@@ -1,9 +1,11 @@
 package com.go.arnite.ui.user.signup
 
+import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ProgressBar
 import android.widget.Toast
 import com.go.arnite.R
 import com.go.arnite.models.User
@@ -16,6 +18,7 @@ import kotlinx.android.synthetic.main.activity_sign_up_user.*
 class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClickListener {
 
     lateinit var mPresenter: SignUpContract.Presenter
+    private var progressDialog : ProgressDialog?= null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +37,10 @@ class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClick
     }
 
     private fun signUp() {
+        progressDialog = ProgressDialog(this)
+        progressDialog?.setMessage("Loading...")
+        progressDialog?.setCancelable(true)
+        progressDialog?.show()
         val email: String = etEmail.text.toString()
         val name: String = etUsername.text.toString()
         val password: String = etPassword.text.toString()
@@ -44,11 +51,13 @@ class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClick
     }
 
     override fun registerSuccess(message: String) {
+        progressDialog?.dismiss()
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
         startActivity(Intent(this,MainUserActivity::class.java))
     }
 
     override fun registerFailure(message: String) {
+        progressDialog?.dismiss()
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 

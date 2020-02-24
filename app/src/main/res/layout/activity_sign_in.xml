@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginHorizontal="24dp"
+    android:background="@android:color/white"
+    android:paddingHorizontal="24dp"
     tools:context=".ui.common.signin.SignInActivity">
 
     <TextView
@@ -102,6 +103,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -113,22 +115,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green"
             android:text="User"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:layout_weight="1"
-            android:background="@drawable/btn_green" />
+            android:textColor="@android:color/white" />
 
         <Button
             android:id="@+id/btnSignupMentor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/btn_green"
             android:text="Mentor"
             android:textAllCaps="false"
-            android:textColor="@android:color/white"
-            android:layout_weight="1"
-            android:background="@drawable/btn_green" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -13,15 +13,15 @@
         <activity android:name="com.go.arnite.ui.mentor.signup.SignUpMentorActivity" />
         <activity android:name="com.go.arnite.ui.common.forgotpassword.ForgotPasswordActivity" />
         <activity android:name="com.go.arnite.ui.common.onboarding.OnBoardingScreen" />
-        <activity android:name="com.go.arnite.ui.common.signin.SignInActivity">
+        <activity android:name="com.go.arnite.ui.common.signin.SignInActivity"></activity>
+        <activity android:name="com.go.arnite.ui.common.termscondition.TermsConditionActivity" />
+        <activity android:name="com.go.arnite.ui.common.splashscreen.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.go.arnite.ui.common.termscondition.TermsConditionActivity" />
-        <activity android:name="com.go.arnite.ui.common.splashscreen.SplashScreenActivity" />
         <activity android:name="com.go.arnite.ui.main.MainActivity"></activity>
     </application>
 

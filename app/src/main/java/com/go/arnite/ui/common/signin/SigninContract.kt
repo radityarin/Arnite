@@ -22,6 +22,7 @@ interface SigninContract {
 
         fun doLogin(username: String, password: String)
 
+        fun isLogin()
     }
 
 }

@@ -22,4 +22,10 @@ class SigninPresenter : SigninContract.Presenter {
         })
     }
 
+    override fun isLogin() {
+        if (mInteractor.isLogin()){
+            mView.showLoginSuccess("Sudah Login")
+        }
+    }
+
 }

@@ -19,7 +19,7 @@ class SplashScreenActivity : AppCompatActivity() {
         setContentView(R.layout.activity_splash_screen)
 
 
-        // Using a handler to delay loading the MainActivity
+        // Using a handler to delay loading the MainUserActivity
         Handler().postDelayed({
 
             // Start activity

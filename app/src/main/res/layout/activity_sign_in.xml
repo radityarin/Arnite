@@ -82,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:background="@drawable/btn_green"
+        android:background="@drawable/btn_blue"
         android:text="Sign In"
         android:textAllCaps="false"
         android:textColor="@android:color/white"
@@ -94,13 +94,15 @@
         android:id="@+id/tvSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="76dp"
+        android:layout_marginBottom="8dp"
         android:text="Dont have an account? Sign Up here"
         android:textAlignment="center"
         app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        tools:layout_editor_absoluteX="24dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -117,7 +119,7 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="8dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_green"
+            android:background="@drawable/btn_blue"
             android:text="User"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />
@@ -128,7 +130,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_weight="1"
-            android:background="@drawable/btn_green"
+            android:background="@drawable/btn_blue"
             android:text="Mentor"
             android:textAllCaps="false"
             android:textColor="@android:color/white" />

@@ -5,14 +5,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ProgressBar
 import android.widget.Toast
 import com.go.arnite.R
 import com.go.arnite.models.User
-import com.go.arnite.ui.common.signin.SignUpContract
-import com.go.arnite.ui.common.signin.SignUpPresenter
-import com.go.arnite.ui.common.signin.SigninPresenter
-import com.go.arnite.ui.user.main.MainUserActivity
+import com.go.arnite.ui.user.main.main.MainUserActivity
 import kotlinx.android.synthetic.main.activity_sign_up_user.*
 
 class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClickListener {
@@ -53,7 +49,7 @@ class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClick
     override fun registerSuccess(message: String) {
         progressDialog?.dismiss()
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this,MainUserActivity::class.java))
+        moveToNextActivity()
     }
 
     override fun registerFailure(message: String) {
@@ -61,4 +57,7 @@ class SignUpUserActivity : AppCompatActivity(),SignUpContract.View, View.OnClick
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
     }
 
+    override fun moveToNextActivity() {
+        startActivity(Intent(this, MainUserActivity::class.java))
+    }
 }

@@ -1,6 +1,5 @@
-package com.go.arnite.ui.common.signin
+package com.go.arnite.ui.user.signup
 
-import android.content.Intent
 import com.go.arnite.models.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference

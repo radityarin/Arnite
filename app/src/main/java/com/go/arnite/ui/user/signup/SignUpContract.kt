@@ -1,4 +1,4 @@
-package com.go.arnite.ui.common.signin
+package com.go.arnite.ui.user.signup
 
 import com.go.arnite.models.User
 
@@ -17,6 +17,8 @@ interface SignUpContract {
         fun registerSuccess(message: String)
 
         fun registerFailure(message: String)
+
+        fun moveToNextActivity()
 
     }
 

@@ -23,4 +23,8 @@ class SigninInteractor {
             }
     }
 
+    fun isLogin(): Boolean {
+        return auth.currentUser != null
+    }
+
 }

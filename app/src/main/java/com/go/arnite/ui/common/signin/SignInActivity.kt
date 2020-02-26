@@ -9,7 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.go.arnite.R
 import com.go.arnite.ui.common.forgotpassword.ForgotPasswordActivity
 import com.go.arnite.ui.mentor.signup.SignUpMentorActivity
-import com.go.arnite.ui.user.main.MainUserActivity
+import com.go.arnite.ui.user.main.main.MainUserActivity
 import com.go.arnite.ui.user.signup.SignUpUserActivity
 import kotlinx.android.synthetic.main.activity_sign_in.*
 
@@ -57,6 +57,11 @@ class SignInActivity : AppCompatActivity(), SigninContract.View, View.OnClickLis
     override fun showLoginFailure(message: String) {
         progressDialog?.dismiss()
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
+    }
+
+    override fun onStart() {
+        super.onStart()
+        mPresenter.isLogin()
     }
 
 }
